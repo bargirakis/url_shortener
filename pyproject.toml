@@ -2,8 +2,8 @@
 name = "flask-test"
 version = "0.1.0"
 description = "flask tutorial"
-authors = ["Your Name <you@example.com>"]
-readme = "README.md"
+authors = ["me"]
+packages = [{include = "shortener"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
