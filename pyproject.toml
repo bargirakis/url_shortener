@@ -8,6 +8,7 @@ packages = [{include = "shortener"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 Flask = "*"
+sqlalchemy = "^2.0.30"
 
 
 [tool.poetry.group.dev.dependencies]
