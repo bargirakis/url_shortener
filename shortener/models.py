@@ -4,6 +4,8 @@ import datetime
 
 class Url(Base):
 
+    __tablename__ = "url"
+
     id: Mapped[int] = mapped_column(primary_key=True)
     short_url: Mapped[str] = mapped_column(String(5))
     long_url: Mapped[str] = mapped_column(String(2000))
