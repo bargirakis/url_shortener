@@ -10,6 +10,7 @@ python = "^3.11"
 Flask = "*"
 sqlalchemy = "^2.0.30"
 flask-migrate = "^4.0.7"
+flask-sqlalchemy = "^3.1.1"
 
 
 [tool.poetry.group.dev.dependencies]
