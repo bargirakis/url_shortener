@@ -1,10 +1,13 @@
 from flask import Flask, url_for
+from flask_migrate import Migrate
 from markupsafe import escape
-from shortener.models import db
+from db import db
+
 app = Flask(__name__)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
 db.init_app(app)
+migrate = Migrate(app, db)
 
 @app.route("/")
 def hello_world():

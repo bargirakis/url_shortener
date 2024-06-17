@@ -1,3 +1,4 @@
-from sqlalchemy import create_engine
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.orm import DeclarativeBase as Base
 
-engine = create_engine("sqlite://", echo=True)
+db = SQLAlchemy(model_class=Base)
