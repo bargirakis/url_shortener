@@ -1,8 +1,11 @@
+import datetime
+from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase as Base, Mapped, mapped_column
 from sqlalchemy import String
-import datetime
 
-class Url(Base):
+db = SQLAlchemy(model_class=Base)
+
+class Url(db.Model):
 
     __tablename__ = "url"
 
